@@ -7,8 +7,8 @@
 ## 安装
 
 ```
-yarn add getTableDataSize
-npm install getTableDataSize
+yarn add gettabledatasize
+npm install gettabledatasize
 ```
 
 
@@ -17,7 +17,7 @@ npm install getTableDataSize
 
 
 ```javascript
-import { getTableDataSize } from 'getTableDataSize';
+import { getTableDataSize } from 'gettabledatasize';
 
 const columns = [
         { label: '姓名', field: 'name', frozen: true },
