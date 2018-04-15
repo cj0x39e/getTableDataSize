@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link href="https://cdn.bootcss.com/mocha/5.1.0/mocha.min.css" rel="stylesheet">
+    <script src="https://cdn.bootcss.com/mocha/5.1.0/mocha.min.js"></script>
+</head>
+<body>
+    <div id="mocha"></div>
+    <script>
+        mocha.setup('bdd');
+    </script>
+    <script src="https://cdn.bootcss.com/chai/4.1.2/chai.min.js"></script>
+    <script src="test.js"></script>
+    <script>
+        mocha.run();
+    </script>
+</body>
+</html>

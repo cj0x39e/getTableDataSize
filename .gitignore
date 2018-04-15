@@ -1,0 +1,6 @@
+.DS_Store
+.idea
+.cache
+*.log
+dist/
+node_modules/
