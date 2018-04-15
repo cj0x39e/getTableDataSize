@@ -1,10 +1,16 @@
 {
-  "name": "getTableDataSize",
-  "version": "0.0.1",
+  "name": "gettabledatasize",
+  "version": "0.0.2",
   "scripts": {
     "test": "parcel test/index.html"
   },
   "main": "index.js",
+  "repository": {
+    "url": "https://github.com/taozhiw/getTableDataSize.git",
+    "type": "git"
+  },
+  "homepage": "https://github.com/taozhiw/getTableDataSize",
+  "bugs": "https://github.com/taozhiw/getTableDataSize/issues",
   "author": "taozhi <taozhi1028@gmail.com>",
   "license": "MIT",
   "devDependencies": {
