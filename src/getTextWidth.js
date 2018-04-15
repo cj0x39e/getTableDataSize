@@ -4,12 +4,12 @@
 export default function getTextWidth(text, font) {
 
     if (typeof text === 'undefined') {
+        return 0;
+    } else {
         const canvas = getTextWidth.canvas || (getTextWidth.canvas = document.createElement("canvas"));
         const context = canvas.getContext('2d');
 
         context.font = font;
         return context.measureText(text).width;
-    } else {
-        return 0;
     }
 }
