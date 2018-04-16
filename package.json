@@ -1,6 +1,6 @@
 {
   "name": "gettabledatasize",
-  "version": "0.0.5",
+  "version": "0.0.6",
   "scripts": {
     "test": "parcel test/index.html"
   },
@@ -14,6 +14,7 @@
   "author": "taozhi <taozhi1028@gmail.com>",
   "license": "MIT",
   "devDependencies": {
+    "babel-core": "^6.26.0",
     "babel-preset-env": "^1.6.1"
   }
 }

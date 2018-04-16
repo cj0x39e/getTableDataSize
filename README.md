@@ -33,10 +33,10 @@ const data = [
 const result = getTableDataSize(columns, data);
 
 console.log(JSON.stringify(columns));
-// [{"label":"姓名","field":"name","frozen":true,"width":184},{"label":"年龄","field":"age","width":32},{"label":"出生地","field":"birthplace","width":144}]
+// [{"label":"姓名","field":"name","frozen":true,"width":183.703125,"_widthFromGTDS_":true},{"label":"年龄","field":"age","width":32,"_widthFromGTDS_":true},{"label":"出生地","field":"birthplace","width":144,"_widthFromGTDS_":true}]
 
 console.log(JSON.stringify(result));
-// {"countWidth":360,"unfrozenCountWidth":176,"frozenCountWidth":184}
+// {"totalWidth":359.703125,"unfrozenWidth":176,"frozenWidth":183.703125,"calculateColumnAmount":3,"notCalculateColumnAmount":0}
 ```
 
 
@@ -55,6 +55,7 @@ label | 该列显示的标题 | string | 是 | - |
 field | 对应列内容的字段名 | string | 是 | - |
 width | 该列的宽度 | number | 否 | - |
 frozen | 该列是否为固定列 | boolean | 否 | false |
+_widthFromGTDS_ | 用以标识该列的宽度是否为计算宽度，一般无需手动配置，如果配置了 width, 则会设置为 false，否则设置为 true | boolean | 否（） | - |
 
 ### data { Array }
 
@@ -69,6 +70,7 @@ frozen | 该列是否为固定列 | boolean | 否 | false |
 参数  | 说明 | 类型 | 默认值  |
 --------- | --------| --------| --------|
 columnMaxWidth | 最大的列宽度 | number | 512 |
+columnRedundancyWidth | 每列的冗余宽短，有些情况我们需要的列宽可能比计算的列宽一些，可以配置此值 | number | 0 |
 font | 应该于文字的样式 | string ( [关于font](https://developer.mozilla.org/zh-CN/docs/Web/CSS/font) ）| 默认获取应用于 `body` 的 `font` 值 |
 widthAlias | 替代 `column` 配置对象 `width` 字段的字段配置 | string | 'width' |
 labelAlias | 替代 `column` 配置对象 `label` 字段的字段配置 | string | 'label' |
@@ -81,9 +83,11 @@ frozenAlias | 替代 `column` 配置对象 `frozen` 字段的字段配置 | stri
 
 属性  | 说明 | 类型 |
 --------- | --------| --------|
-countWidth | 所有列的宽度和 | number |
-unfrozenCountWidth | 所有未固定列的宽度和   | number |
-frozenCountWidth | 所有固定列的宽度和   | number |
+totalWidth | 所有列的宽度和 | number |
+unfrozenWidth | 所有未固定列的宽度和   | number |
+frozenWidth | 所有固定列的宽度和   | number |
+calculateColumnAmount | 所有设置了计算宽度的列的个数 | number
+notCalculateColumnAmount | 所有未设置计算宽度的列的个数 | number
 
 ## license
 
