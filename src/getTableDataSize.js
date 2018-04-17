@@ -17,7 +17,7 @@ function getTableDataSize(columns, data, options = {}) {
     let font = options.font;
     if (typeof options.font !== 'string') {
         if (!getTableDataSize.font) {
-            getTableDataSize.font = window.getComputedStyle(document.body,null).getPropertyValue('font');
+            getTableDataSize.font = window.getComputedStyle(document.body, null).getPropertyValue('font');
         }
         font = getTableDataSize.font;
     }
