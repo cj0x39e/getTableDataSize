@@ -71,7 +71,7 @@ frozen | 该列是否为固定列 | boolean | 否 | false |
 --------- | --------| --------| --------|
 columnMaxWidth | 最大的列宽度 | number | 512 |
 columnRedundancyWidth | 每列的冗余宽短，有些情况我们需要的列宽可能比计算的列宽一些，可以配置此值 | number | 0 |
-font | 应该于文字的样式 | string ( [关于font](https://developer.mozilla.org/zh-CN/docs/Web/CSS/font) ）| 默认获取应用于 `body` 的 `font` 值 |
+font | 应该于文字的样式，( [关于font](https://developer.mozilla.org/zh-CN/docs/Web/CSS/font) ） | string | 默认获取应用于 `body` 的 `font` 值 |
 widthAlias | 替代 `column` 配置对象 `width` 字段的字段配置 | string | 'width' |
 labelAlias | 替代 `column` 配置对象 `label` 字段的字段配置 | string | 'label' |
 fieldAlias | 替代 `column` 配置对象 `field` 字段的字段配置 | string | 'field' |
