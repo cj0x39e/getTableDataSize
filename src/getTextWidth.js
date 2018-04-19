@@ -3,13 +3,11 @@
 // https://stackoverflow.com/questions/118241/calculate-text-width-with-javascript
 export default function getTextWidth(text, font) {
 
-    if (typeof text === 'undefined') {
-        return 0;
-    } else {
-        const canvas = getTextWidth.canvas || (getTextWidth.canvas = document.createElement('canvas'));
-        const context = canvas.getContext('2d');
+    if (typeof text === 'undefined' || text === null) return 0;
 
-        context.font = font;
-        return context.measureText(text).width;
-    }
+    const canvas = getTextWidth.canvas || (getTextWidth.canvas = document.createElement('canvas'));
+    const context = canvas.getContext('2d');
+
+    context.font = font;
+    return context.measureText(text).width;
 }
