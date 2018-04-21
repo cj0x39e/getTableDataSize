@@ -1,0 +1,11 @@
+{
+    "extends": "airbnb-base",
+    "rules": {
+      "indent": ["error", 4],
+      "import/prefer-default-export": "off"
+    },
+    "globals": {
+      "document": false,
+      "window": false
+    }
+}
