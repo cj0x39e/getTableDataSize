@@ -54,8 +54,8 @@ console.log(JSON.stringify(result));
 label | 该列显示的标题 | string | 是 | - |
 field | 对应列内容的字段名 | string | 是 | - |
 width | 该列的宽度 | number | 否 | - |
-frozen | 该列是否为固定列 | boolean | 否 | false |
-\_widthFromGTDS_ | 用以标识该列的宽度是否为计算宽度，一般无需手动配置，如果配置了 width, 则会设置为 false，否则设置为 true | boolean | 否（） | - |
+frozen | 该列是否为固定列，可能有些框架该值为字符串，所以可以配置为字符串 | boolean \| string | 否 | false |
+\_widthFromGTDS_ | 用以标识该列的宽度是否为计算宽度，一般无需手动配置，如果配置了 width, 则会设置为 false，否则设置为 true | boolean | 否 | - |
 
 ### data { Array }
 
