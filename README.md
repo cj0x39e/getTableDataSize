@@ -6,11 +6,18 @@
 
 ## 安装
 
+使用 `yarn` 或者 `npm`
 ```
 yarn add gettabledatasize
+
 npm install gettabledatasize
 ```
 
+直接在页面上使用：
+
+```html
+<script src="https://unpkg.com/gettabledatasize@1.0.0/build/gettabledatasize.js"></script>
+```
 
 ## 使用
 

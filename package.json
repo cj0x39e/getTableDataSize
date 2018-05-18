@@ -1,11 +1,11 @@
 {
   "name": "gettabledatasize",
-  "version": "0.1.0",
+  "version": "1.0.0",
   "scripts": {
     "test": "parcel test/index.html",
     "build": "./node_modules/.bin/webpack"
   },
-  "main": "build/gettabledatesize.js",
+  "main": "build/gettabledatasize.js",
   "module": "index.js",
   "repository": {
     "url": "https://github.com/taozhiw/getTableDataSize.git",
