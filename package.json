@@ -2,9 +2,11 @@
   "name": "gettabledatasize",
   "version": "0.1.0",
   "scripts": {
-    "test": "parcel test/index.html"
+    "test": "parcel test/index.html",
+    "build": "./node_modules/.bin/webpack"
   },
-  "main": "index.js",
+  "main": "build/gettabledatesize.js",
+  "module": "index.js",
   "repository": {
     "url": "https://github.com/taozhiw/getTableDataSize.git",
     "type": "git"
@@ -18,6 +20,8 @@
     "babel-preset-env": "^1.6.1",
     "eslint": "^4.19.1",
     "eslint-config-airbnb-base": "^12.1.0",
-    "eslint-plugin-import": "^2.11.0"
+    "eslint-plugin-import": "^2.11.0",
+    "webpack": "^4.8.3",
+    "webpack-cli": "^2.1.3"
   }
 }
