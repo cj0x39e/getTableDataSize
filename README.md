@@ -16,7 +16,7 @@ npm install gettabledatasize
 直接在页面上使用：
 
 ```html
-<script src="https://unpkg.com/gettabledatasize@1.0.1/build/gettabledatasize.js"></script>
+<script src="https://unpkg.com/gettabledatasize@1.0.2/build/gettabledatasize.js"></script>
 ```
 
 ## 使用
