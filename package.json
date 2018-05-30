@@ -1,6 +1,6 @@
 {
   "name": "gettabledatasize",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "scripts": {
     "test": "parcel test/index.html",
     "build": "./node_modules/.bin/webpack"
@@ -22,9 +22,7 @@
     "eslint-config-airbnb-base": "^12.1.0",
     "eslint-plugin-import": "^2.11.0",
     "webpack": "^4.8.3",
-    "webpack-cli": "^2.1.3"
-  },
-  "dependencies": {
+    "webpack-cli": "^2.1.3",
     "babel-loader": "^7.1.4"
   }
 }
