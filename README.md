@@ -1,3 +1,5 @@
+[![npm version](https://badge.fury.io/js/gettabledatasize.svg)](https://badge.fury.io/js/gettabledatasize)
+
 ## 介绍
 
 `getTableDataSize` 用于获取表格数据每列所需的宽度。
@@ -16,7 +18,7 @@ npm install gettabledatasize
 直接在页面上使用：
 
 ```html
-<script src="https://unpkg.com/gettabledatasize@1.0.2/build/gettabledatasize.js"></script>
+<script src="https://unpkg.com/gettabledatasize@1.0.3/build/gettabledatasize.js"></script>
 ```
 
 ## 使用
