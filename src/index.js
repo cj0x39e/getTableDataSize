@@ -1,3 +1,1 @@
-import getTableDataSize from './getTableDataSize';
-
-export { getTableDataSize };
+import getTableDataSize from './getTableDataSize';export { getTableDataSize };

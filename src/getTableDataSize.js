@@ -64,20 +64,26 @@ function getTableDataSize(columns, data, options) {
 
     for (let i = 0; i < columnLength; i += 1) {
         const column = columns[i];
-        const rowField = column[fieldAlias];
-        const fieldValid = isString(rowField);
-        let columnWidth = getTextWidth(column[labelAlias], font);
-
-        for (let j = 0; j < dataLength && fieldValid; j += 1) {
-            columnWidth = Math.max(columnWidth, getTextWidth(data[j][rowField], font));
-        }
-
-        columnWidth += columnRedundancyWidth;
 
         if (isNumber(column[widthAlias])) {
             column[widthFlag] = false;
             notCalculateColumnAmount += 1;
         } else {
+            const rowField = column[fieldAlias];
+            const fieldValid = isString(rowField);
+            let columnWidth = getTextWidth(column[labelAlias], font);
+
+            if (columnWidth < columnMaxWidth) {
+                for (let j = 0; j < dataLength && fieldValid; j += 1) {
+                    const width = getTextWidth(data[j][rowField], font);
+                    if (width > columnWidth) {
+                        columnWidth = width;
+                        if (columnWidth >= columnMaxWidth) { break; }
+                    }
+                }
+            }
+
+            columnWidth += columnRedundancyWidth;
             column[widthAlias] = Math.min(columnWidth, columnMaxWidth);
             column[widthFlag] = true;
             calculateColumnAmount += 1;
