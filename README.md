@@ -1,4 +1,5 @@
 [![npm version](https://badge.fury.io/js/gettabledatasize.svg)](https://badge.fury.io/js/gettabledatasize)
+[![CircleCI](https://circleci.com/gh/taozhiw/getTableDataSize/tree/master.svg?style=svg)](https://circleci.com/gh/taozhiw/getTableDataSize/tree/master)
 
 ## 介绍
 

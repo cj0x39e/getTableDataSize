@@ -1,7 +1,7 @@
 import { getTableDataSize } from '../src/index';
+import { expect } from "chai";
 import { columns, data } from './data';
 
-const expect = chai.expect;
 
 const copyColumns = () => JSON.parse(JSON.stringify(columns));
 
