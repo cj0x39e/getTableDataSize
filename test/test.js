@@ -1,5 +1,5 @@
-import { getTableDataSize } from '../src/index';
-import { expect } from "chai";
+import { getTableDataSize } from '../index.js';
+import { expect } from 'chai';
 import { columns, data } from './data';
 
 

@@ -3,7 +3,7 @@ const webpack = require('webpack');
 const packageInfo = require('./package.json');
 
 module.exports = {
-    entry: './src/index.js',
+    entry: './index.js',
     mode: 'production',
     output: {
         path: path.resolve(__dirname, 'build'),

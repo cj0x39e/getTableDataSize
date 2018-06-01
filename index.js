@@ -1,3 +1,3 @@
-import { getTableDataSize } from './src/index';
+import getTableDataSize from './src/getTableDataSize';
 
 export { getTableDataSize };
