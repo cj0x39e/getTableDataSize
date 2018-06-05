@@ -1,6 +1,7 @@
-
-// 使用该思路获取文本宽度的原始出处：
-// https://stackoverflow.com/questions/118241/calculate-text-width-with-javascript
+/**
+ * Inspired by：
+ * {@link https://stackoverflow.com/questions/118241/calculate-text-width-with-javascript}
+ */
 
 let canvas;
 
