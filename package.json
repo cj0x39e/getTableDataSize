@@ -1,12 +1,11 @@
 {
   "name": "gettabledatasize",
-  "version": "1.1.3",
+  "version": "1.1.4",
   "scripts": {
     "test": "node node_modules/karma/bin/karma start",
     "build": "./node_modules/.bin/webpack"
   },
-  "main": "build/gettabledatasize.js",
-  "module": "index.js",
+  "main": "dist/gettabledatasize.js",
   "repository": {
     "url": "https://github.com/taozhiw/getTableDataSize.git",
     "type": "git"
