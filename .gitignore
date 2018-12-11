@@ -2,5 +2,4 @@
 .idea
 .cache
 *.log
-dist/
 node_modules/

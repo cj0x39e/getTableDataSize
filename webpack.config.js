@@ -6,7 +6,7 @@ module.exports = {
     entry: './index.js',
     mode: 'production',
     output: {
-        path: path.resolve(__dirname, 'build'),
+        path: path.resolve(__dirname, 'dist'),
         filename: 'gettabledatasize.js',
         libraryTarget: 'umd'
     },
